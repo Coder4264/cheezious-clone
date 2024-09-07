@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: ghostwhite;
+}
+.splide {
+    width: 88vw; margin: auto;
+}
+
+.slide-image {
+  width: 100%;
+  object-fit: cover; /* Ensures image covers the entire slide */
+}
+.splide__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 6rem;
+  background-color: rgba(255, 33, 33, 0.64); /* Semi-transparent background */
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.splide__arrow--prev {
+  left: -2.2rem; /* Move the previous arrow to the left, outside the image */
+}
+
+.splide__arrow--next {
+  right: -2.2rem; /* Move the next arrow to the right, outside the image */
+}
+
+.splide__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Add space between the slider and the dots */
+}
+
+.splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:480px){
+  body{
+    width: 100%;
+  }
+  .splide__arrow--prev {
+    display: none; /* Move the previous arrow to the left, outside the image */
+  }
+  
+  .splide__arrow--next {
+    display: none; /* Move the next arrow to the right, outside the image */
+  }
+}
+
+/* 
+.custom-scrollbar::-webkit-scrollbar {
+    height: 2px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 10px; 
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: darkred; 
+  }
+  
+  .custom-scrollbar {
+    scrollbar-width: thin; 
+    scrollbar-color: red transparent; 
+  } */
+    .card{
+      background-color: rgba(255, 255, 255, 0.519);
+    }
+    .shortcutbg{
+      background-color: ghostwhite;
+    }
+/* Css for Starter cards to show dots when exceding line */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2; /* Number of lines to show */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 2.5rem;
+    }
