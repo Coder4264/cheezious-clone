@@ -37,7 +37,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className='sticky top-0 w-full bg-yellow-400 px-5 z-10'>
+    <div className='sticky top-0 w-full bg-yellow-400 md:px-5 z-10'>
       <div className='w-11/12 m-auto px-2 flex justify-between items-center'>
         {/* Location Icon */}
         <div className='w-4/12 flex items-center gap-2'>
@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
 
           {/* Cart Icon with Menu */}
-          <div className='relative'>
+          <div className='relative cart-icon'>
             <FontAwesomeIcon icon={faCartShopping} size='2x' color='red' onClick={handleCartClick} className='cursor-pointer' />
             <div className='absolute -top-3 -right-4 w-6 h-6 rounded-full bg-white'>
               <span className='flex justify-center items-center'>0</span>

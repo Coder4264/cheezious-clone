@@ -14,7 +14,7 @@ import Addons from './Food-Items/Addons.jsx'
 
 export default function AllRecipes() {
   return (
-    <div>
+    <div className='w-[88vw] m-auto'>
         <Starters/>
         <SomewhatLocal/>
         <SomewhatSooper/>

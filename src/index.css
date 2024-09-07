@@ -63,6 +63,9 @@ body{
   .splide__arrow--next {
     display: none; /* Move the next arrow to the right, outside the image */
   }
+  .cart-icon{
+    display: none;
+  }
 }
 
 /* 

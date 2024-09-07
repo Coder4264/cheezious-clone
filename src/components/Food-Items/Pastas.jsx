@@ -18,8 +18,8 @@ export default function Pastas() {
         },
     ]
     return (
-        <div className='w-[88vw] m-auto '>
-            <h1 className='text-4xl font-bold my-10 ' id='pastas'>Pastas </h1>
+        <div className=''>
+            <h1 className='md:text-4xl text-2xl font-bold md:my-10 my-5 ' id='pastas'>Pastas </h1>
             <div className='grid grid-cols-2 lg:grid-cols-6  gap-5 mb-20'>
             {Pastas.map(({ id, title, subTitle, imgUrl, price }) => (
                 <div className='w-full shadow-lg rounded-xl border-2 border-gray-100 hover:border-3 hover:border-yellow-400 duration-500 flex flex-col justify-betweeb items-center p-2 gap-2 card' key={id}>
