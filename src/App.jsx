@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Navbar/>
-      <div className='my-16'>
+      <div className='md:my-16 my-6'>
         <ResponsiveSlider/>
       </div>
       <ShortcutOptions/>

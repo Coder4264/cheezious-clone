@@ -25,7 +25,7 @@ export default function CartButton({ item, bgColor, color, text, className }) {
   return (
     <div>
       <button
-        className={`px-5 py-1 text-semibold rounded-full ${className}`}
+        className={`px-4 py-1 text-semibold rounded-full ${className}`}
         style={{ backgroundColor: bgColor, color: color }}
         onClick={openModal}
       >
