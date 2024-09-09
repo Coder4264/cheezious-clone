@@ -48,7 +48,7 @@ export default function SandwichesAndPlatters() {
                     className='w-full shadow-lg rounded-xl border-2 border-gray-100 hover:border-3 hover:border-yellow-400 duration-500 flex flex-col justify-between items-center p-2 gap-2 card'
                     key={item.id}>
                     <img src={item.imgUrl} className='aspect-square rounded-xl' alt={item.title} />
-                    <h3 className='font-bold text-center'>{item.title}</h3>
+                    <h3 className='font-bold text-center text-sm md:text-lg'>{item.title}</h3>
                     <p className='text-sm line-clamp-2 overflow-hidden text-center'>{item.subTitle}</p>
                     <div className='w-full h-px bg-gray-200'></div>
                     <p className='font-bold text-red-500'>Rs: {item.price}</p>
