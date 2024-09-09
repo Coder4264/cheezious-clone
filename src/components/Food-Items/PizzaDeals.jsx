@@ -27,7 +27,7 @@ export default function PizzaDeals() {
     ]
     return (
         <div>
-            <h1 className='md:text-4xl text-2xl font-bold md:my-10 my-5' id='starters'>Starters</h1>
+            <h1 className='md:text-4xl text-2xl font-bold md:my-10 my-5' id='pizza-deals'>Starters</h1>
             <div className='grid grid-cols-2 lg:grid-cols-6 gap-5 mb-20'>
                 {PizzaDeals.map((item) => (
                     <div
