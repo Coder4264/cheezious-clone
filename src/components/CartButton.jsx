@@ -35,7 +35,7 @@ export default function CartButton({ item, bgColor, color, text, className }) {
       {/* Modal */}
       {isModalOpen && item && (
         <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50'>
-          <div className='bg-white w-[80vw] md:w-[60vw] md:h-[90vh] p-5 relative'>
+          <div className='bg-white w-[70vw] md:w-[60vw] md:h-[90vh] p-5 relative overflow-scroll'>
             <div className='flex justify-between items-center'>
               <h3 className='font-bold text-lg'>Product Details</h3>
               <FontAwesomeIcon
